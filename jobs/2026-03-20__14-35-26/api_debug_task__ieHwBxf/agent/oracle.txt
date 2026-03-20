@@ -1,0 +1,13 @@
+🔧 CORRIGINDO API DENTRO DO CONTAINER...
+Diretório atual: /app
+Adicionando requests ao requirements.txt...
+Corrigindo Dockerfile...
+Modificando app.py...
+✅ Correção aplicada com sucesso!
+Arquivos corrigidos:
+  - requirements.txt: flask==3.0.0
+requests==2.31.0
+  - Dockerfile: FROM python:3.12-slim
+
+WORKDIR /app
+  - app.py: retorna fixed_key

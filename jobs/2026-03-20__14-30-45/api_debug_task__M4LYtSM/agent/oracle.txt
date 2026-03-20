@@ -1,0 +1,11 @@
+🔧 CORRIGINDO API DENTRO DO CONTAINER...
+Diretório atual: /app
+Conteúdo do diretório: total 28
+drwxr-xr-x 1 root root 4096 Mar 20 14:28 .
+drwxr-xr-x 1 root root 4096 Mar 20 14:30 ..
+-rw-rw-rw- 1 root root   21 Mar 20 14:11 .env
+-rw-r--r-- 1 root root  126 Mar 19 22:44 Dockerfile
+-rw-rw-rw- 1 root root  179 Mar 20 14:28 app.py
+-rw-rw-rw- 1 root root  521 Mar 20 14:13 app.py.backup
+-rw-rw-rw- 1 root root   30 Mar 20 14:28 requirements.txt
+ERRO: ./environment/requirements.txt não encontrado!

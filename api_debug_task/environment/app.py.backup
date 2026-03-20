@@ -1,0 +1,24 @@
+from flask import Flask
+import os
+import sys
+
+# Adicionar diretório atual ao path
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+try:
+    from dotenv import load_dotenv
+    # Carregar variáveis do arquivo .env
+    load_dotenv()
+except ImportError:
+    pass
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    # Tentar pegar do .env via os.environ
+    secret = os.environ.get("SECRET_KEY", "missing")
+    return {"message": secret}
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8000)

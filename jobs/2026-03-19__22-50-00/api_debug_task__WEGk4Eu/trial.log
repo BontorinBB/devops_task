@@ -1,0 +1,107 @@
+Trial api_debug_task__WEGk4Eu failed: Docker compose command failed for environment api_debug_task. Command: docker compose -p api_debug_task__wegk4eu --project-directory /workspaces/devops_task/api_debug_task/environment -f /home/codespace/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/codespace/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml build. Return code: 1. Stdout: #1 [internal] load local bake definitions
+#1 reading from stdin 567B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 163B done
+#2 DONE 0.0s
+
+#3 [auth] library/python:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#4 [internal] load metadata for docker.io/library/python:3.12-slim
+#4 DONE 0.6s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [1/4] FROM docker.io/library/python:3.12-slim@sha256:7026274c107626d7e940e0e5d6730481a4600ae95d5ca7eb532dd4180313fea9
+#6 resolve docker.io/library/python:3.12-slim@sha256:7026274c107626d7e940e0e5d6730481a4600ae95d5ca7eb532dd4180313fea9 0.0s done
+#6 ...
+
+#7 [internal] load build context
+#7 transferring context: 457B done
+#7 DONE 0.1s
+
+#6 [1/4] FROM docker.io/library/python:3.12-slim@sha256:7026274c107626d7e940e0e5d6730481a4600ae95d5ca7eb532dd4180313fea9
+#6 sha256:ec781dee3f4719c2ca0dd9e73cb1d4ed834ed1a406495eb6e44b6dfaad5d1f8f 7.61MB / 29.78MB 0.2s
+#6 sha256:b1a20e2fae4cdafe596f3275baf250182347549a39d648abbad68a25f2e151fd 1.29MB / 1.29MB 0.2s
+#6 sha256:a6d1911b36ac5b384a54e9197335acdf0ebb0a06910b25b67b9afd054cdc2eb7 1.05MB / 12.11MB 0.2s
+#6 sha256:7026274c107626d7e940e0e5d6730481a4600ae95d5ca7eb532dd4180313fea9 10.37kB / 10.37kB done
+#6 sha256:0bbd3d5f3abb2024c1b92ce69e8bdfefa17c248999827c34e2ed52ba0772da1b 1.75kB / 1.75kB done
+#6 sha256:fb1118f126b507965df3c46fdfc52312dfd5262e7b6652ef510bd9298f69a6bc 5.66kB / 5.66kB done
+#6 sha256:ec781dee3f4719c2ca0dd9e73cb1d4ed834ed1a406495eb6e44b6dfaad5d1f8f 29.48MB / 29.78MB 0.4s
+#6 sha256:a6d1911b36ac5b384a54e9197335acdf0ebb0a06910b25b67b9afd054cdc2eb7 11.53MB / 12.11MB 0.4s
+#6 sha256:e3c59d77c03efd793b736fb93c9b3c578eb84a62458c148b6974323225d030c2 249B / 249B 0.4s done
+#6 sha256:ec781dee3f4719c2ca0dd9e73cb1d4ed834ed1a406495eb6e44b6dfaad5d1f8f 29.78MB / 29.78MB 1.0s done
+#6 sha256:a6d1911b36ac5b384a54e9197335acdf0ebb0a06910b25b67b9afd054cdc2eb7 12.11MB / 12.11MB 1.0s done
+#6 extracting sha256:ec781dee3f4719c2ca0dd9e73cb1d4ed834ed1a406495eb6e44b6dfaad5d1f8f 0.1s
+#6 extracting sha256:ec781dee3f4719c2ca0dd9e73cb1d4ed834ed1a406495eb6e44b6dfaad5d1f8f 1.4s done
+#6 extracting sha256:b1a20e2fae4cdafe596f3275baf250182347549a39d648abbad68a25f2e151fd
+#6 extracting sha256:b1a20e2fae4cdafe596f3275baf250182347549a39d648abbad68a25f2e151fd 0.2s done
+#6 extracting sha256:a6d1911b36ac5b384a54e9197335acdf0ebb0a06910b25b67b9afd054cdc2eb7
+#6 extracting sha256:a6d1911b36ac5b384a54e9197335acdf0ebb0a06910b25b67b9afd054cdc2eb7 0.9s done
+#6 extracting sha256:e3c59d77c03efd793b736fb93c9b3c578eb84a62458c148b6974323225d030c2
+#6 extracting sha256:e3c59d77c03efd793b736fb93c9b3c578eb84a62458c148b6974323225d030c2 done
+#6 DONE 6.3s
+
+#8 [2/4] WORKDIR /app
+#8 DONE 0.0s
+
+#9 [3/4] COPY . /app
+#9 DONE 0.0s
+
+#10 [4/4] RUN pip install --no-cache-dir -r requirements.txt
+#10 2.081 Collecting flask==3.0.0 (from -r requirements.txt (line 1))
+#10 2.154   Downloading flask-3.0.0-py3-none-any.whl.metadata (3.6 kB)
+#10 2.181 Collecting werkzeug==1.0.0 (from -r requirements.txt (line 2))
+#10 2.191   Downloading Werkzeug-1.0.0-py2.py3-none-any.whl.metadata (4.7 kB)
+#10 2.200 INFO: pip is looking at multiple versions of flask to determine which version is compatible with other requirements. This could take a while.
+#10 2.201 ERROR: Cannot install -r requirements.txt (line 1) and werkzeug==1.0.0 because these package versions have conflicting dependencies.
+#10 2.202 
+#10 2.202 The conflict is caused by:
+#10 2.202     The user requested werkzeug==1.0.0
+#10 2.202     flask 3.0.0 depends on Werkzeug>=3.0.0
+#10 2.202 
+#10 2.202 To fix this you could try to:
+#10 2.202 1. loosen the range of package versions you've specified
+#10 2.202 2. remove package versions to allow pip to attempt to solve the dependency conflict
+#10 2.202 
+#10 2.278 
+#10 2.278 [notice] A new release of pip is available: 25.0.1 -> 26.0.1
+#10 2.278 [notice] To update, run: pip install --upgrade pip
+#10 2.279 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+#10 ERROR: process "/bin/sh -c pip install --no-cache-dir -r requirements.txt" did not complete successfully: exit code: 1
+------
+ > [4/4] RUN pip install --no-cache-dir -r requirements.txt:
+2.202     flask 3.0.0 depends on Werkzeug>=3.0.0
+2.202 
+2.202 To fix this you could try to:
+2.202 1. loosen the range of package versions you've specified
+2.202 2. remove package versions to allow pip to attempt to solve the dependency conflict
+2.202 
+2.278 
+2.278 [notice] A new release of pip is available: 25.0.1 -> 26.0.1
+2.278 [notice] To update, run: pip install --upgrade pip
+2.279 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+------
+Dockerfile:7
+
+--------------------
+
+   5 |     COPY . /app
+
+   6 |     
+
+   7 | >>> RUN pip install --no-cache-dir -r requirements.txt
+
+   8 |     
+
+   9 |     CMD ["python", "app.py"]
+
+--------------------
+
+failed to solve: process "/bin/sh -c pip install --no-cache-dir -r requirements.txt" did not complete successfully: exit code: 1
+
+. Stderr: None. 
